@@ -69,6 +69,14 @@
   .section-title em { font-style: italic; color: var(--copper); }
   .section-sub { font-size: 0.95rem; line-height: 1.8; color: var(--text-mid); font-weight: 300; max-width: 560px; }
 
+  /* TRUST */
+  #reassurance { background: white; padding: 36px 80px; border-top: 1px solid rgba(176,125,78,0.12); border-bottom: 1px solid rgba(176,125,78,0.12); }
+  .trust-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; }
+  .trust-item { padding-right: 18px; }
+  .trust-kicker { font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--copper); font-weight: 500; margin-bottom: 10px; }
+  .trust-title { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 500; color: var(--text-dark); margin-bottom: 10px; }
+  .trust-body { font-size: 0.84rem; line-height: 1.75; color: var(--text-mid); font-weight: 300; }
+
   /* HOW IT WORKS */
   #how-it-works { background: var(--black); color: var(--off-white); padding: 100px 80px; }
   #how-it-works .section-title { color: var(--off-white); }
@@ -96,6 +104,12 @@
   .product-price span { font-size: 0.8rem; font-family: 'Jost', sans-serif; color: var(--text-light); font-weight: 300; margin-left: 4px; }
   .btn-buy { background: var(--copper); color: white; padding: 10px 20px; font-family: 'Jost', sans-serif; font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; border: none; border-radius: 2px; cursor: pointer; transition: background 0.2s; }
   .btn-buy:hover { background: var(--copper-dark); }
+  .product-guidance { margin-top: 48px; display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+  .guidance-card { background: rgba(255,255,255,0.55); border: 1px solid rgba(176,125,78,0.14); padding: 28px; }
+  .guidance-title { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 500; color: var(--text-dark); margin-bottom: 12px; }
+  .guidance-body { font-size: 0.84rem; line-height: 1.75; color: var(--text-mid); font-weight: 300; }
+  .guidance-body strong { color: var(--text-dark); font-weight: 400; }
+  .guidance-note { margin-top: 28px; font-size: 0.86rem; line-height: 1.8; color: var(--text-mid); max-width: 760px; }
 
   /* IMPACT */
   #impact { background: var(--black); padding: 0; }
@@ -115,6 +129,27 @@
   .stat-num { font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; font-weight: 300; color: var(--copper-light); line-height: 1; margin-bottom: 8px; }
   .stat-label { font-size: 0.78rem; letter-spacing: 0.06em; color: var(--stone-dark); font-weight: 300; line-height: 1.5; }
 
+  /* ABOUT */
+  #about { background: var(--off-white); padding: 100px 80px; }
+  .about-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 56px; align-items: start; }
+  .about-copy p { font-size: 0.92rem; line-height: 1.9; color: var(--text-mid); font-weight: 300; margin-bottom: 22px; max-width: 620px; }
+  .about-aside { background: white; border: 1px solid rgba(176,125,78,0.14); padding: 34px; }
+  .about-aside-title { font-family: 'Cormorant Garamond', serif; font-size: 1.45rem; font-weight: 500; color: var(--text-dark); margin-bottom: 14px; }
+  .about-aside-copy { font-size: 0.86rem; line-height: 1.8; color: var(--text-mid); font-weight: 300; margin-bottom: 18px; }
+  .about-points { display: flex; flex-direction: column; gap: 14px; }
+  .about-point { font-size: 0.82rem; line-height: 1.7; color: var(--text-mid); padding-top: 14px; border-top: 1px solid rgba(176,125,78,0.12); }
+
+  /* STORIES */
+  #stories { background: var(--stone); padding: 100px 80px; }
+  .stories-header { display: flex; justify-content: space-between; align-items: end; gap: 24px; flex-wrap: wrap; margin-bottom: 52px; }
+  .stories-note { max-width: 360px; font-size: 0.84rem; line-height: 1.75; color: var(--text-mid); }
+  .stories-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+  .story-card { background: var(--off-white); border: 1px solid rgba(176,125,78,0.14); padding: 30px; min-height: 100%; }
+  .story-type { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--copper); font-weight: 500; margin-bottom: 14px; }
+  .story-quote { font-family: 'Cormorant Garamond', serif; font-size: 1.45rem; font-weight: 400; line-height: 1.45; color: var(--text-dark); margin-bottom: 18px; }
+  .story-body { font-size: 0.85rem; line-height: 1.8; color: var(--text-mid); font-weight: 300; margin-bottom: 18px; }
+  .story-credit { font-size: 0.76rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-light); }
+
   /* PARTNERS */
   #partners { background: var(--off-white); padding: 100px 80px; }
   .partners-inner { display: grid; grid-template-columns: 5fr 4fr; gap: 80px; align-items: center; }
@@ -129,6 +164,15 @@
   .partners-cta-inner { padding: 40px 36px; text-align: center; }
   .partners-cta-title { font-family: 'Cormorant Garamond', serif; font-size: 1.7rem; font-weight: 300; color: var(--off-white); margin-bottom: 14px; line-height: 1.2; }
   .partners-cta-body { font-size: 0.88rem; line-height: 1.8; color: var(--stone-dark); font-weight: 300; margin-bottom: 28px; }
+
+  /* FAQ */
+  #faq { background: var(--off-white); padding: 100px 80px; }
+  .faq-wrap { display: grid; grid-template-columns: 1fr 1.15fr; gap: 56px; align-items: start; }
+  .faq-note { font-size: 0.86rem; line-height: 1.8; color: var(--text-mid); margin-top: 24px; max-width: 440px; }
+  .faq-list { display: flex; flex-direction: column; gap: 14px; }
+  .faq-item { background: white; border: 1px solid rgba(176,125,78,0.14); padding: 26px 28px; }
+  .faq-question { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 500; color: var(--text-dark); margin-bottom: 12px; }
+  .faq-answer { font-size: 0.87rem; line-height: 1.8; color: var(--text-mid); font-weight: 300; }
 
   /* CONTACT */
   #contact { background: var(--black); padding: 100px 80px; color: var(--off-white); }
@@ -171,12 +215,16 @@
 
   /* RESPONSIVE */
   @media (max-width: 1024px) {
-    #how-it-works, #shop, #partners, #contact { padding: 80px 48px; }
+    #reassurance, #faq, #about, #stories, #how-it-works, #shop, #partners, #contact { padding: 80px 48px; }
     .impact-content { padding: 64px 48px; }
+    .trust-grid, .product-guidance { grid-template-columns: repeat(2,1fr); }
     .steps-grid { grid-template-columns: repeat(2,1fr); }
     .impact-body-grid { grid-template-columns: 1fr; gap: 40px; }
+    .about-grid { grid-template-columns: 1fr; gap: 32px; }
     .partners-inner { grid-template-columns: 1fr; gap: 48px; }
     .products-grid { grid-template-columns: repeat(2,1fr); }
+    .stories-grid { grid-template-columns: repeat(2,1fr); }
+    .faq-wrap { grid-template-columns: 1fr; gap: 36px; }
     nav { padding: 14px 32px; }
     footer { padding: 36px 48px; }
   }
@@ -184,11 +232,13 @@
     #home { grid-template-columns: 1fr; }
     .hero-right { display: none; }
     .hero-left { padding: 48px 24px; }
-    #how-it-works, #shop, #partners, #contact { padding: 64px 24px; }
+    #reassurance, #faq, #about, #stories, #how-it-works, #shop, #partners, #contact { padding: 64px 24px; }
     .impact-content { padding: 48px 24px; }
     footer { padding: 32px 24px; flex-direction: column; text-align: center; }
+    .trust-grid, .product-guidance { grid-template-columns: 1fr; }
     .steps-grid { grid-template-columns: 1fr; }
     .products-grid { grid-template-columns: 1fr; }
+    .stories-grid { grid-template-columns: 1fr; }
     .contact-inner { grid-template-columns: 1fr; gap: 48px; }
     .form-row { grid-template-columns: 1fr; }
     .impact-stats { grid-template-columns: 1fr 1fr; }
@@ -230,11 +280,12 @@
 
   <ul class="nav-links">
     <li><a href="#home">Home</a></li>
-    <li><a href="#how-it-works">How It Works</a></li>
-    <li><a href="#shop">Shop</a></li>
-    <li><a href="#impact">51% Impact</a></li>
-    <li><a href="#partners">For Funeral Homes</a></li>
-    <li><a href="#contact" class="nav-cta">Enquire</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="stories.html">Stories</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="partners.html">For Funeral Homes</a></li>
+    <li><a href="contact.html" class="nav-cta">Enquire</a></li>
   </ul>
   <button class="nav-hamburger" onclick="openMobileNav()" aria-label="Menu">
     <span></span><span></span><span></span>
@@ -246,11 +297,12 @@
 <nav class="mobile-nav" id="mobileNav">
   <button class="mobile-close" onclick="closeMobileNav()">✕</button>
   <a href="#home" onclick="closeMobileNav()">Home</a>
-  <a href="#how-it-works" onclick="closeMobileNav()">How It Works</a>
-  <a href="#shop" onclick="closeMobileNav()">Shop</a>
-  <a href="#impact" onclick="closeMobileNav()">51% Impact</a>
-  <a href="#partners" onclick="closeMobileNav()">For Funeral Homes</a>
-  <a href="#contact" onclick="closeMobileNav()">Contact</a>
+  <a href="products.html">Products</a>
+  <a href="about.html">About</a>
+  <a href="stories.html">Stories</a>
+  <a href="faq.html">FAQ</a>
+  <a href="partners.html">For Funeral Homes</a>
+  <a href="contact.html">Contact</a>
 </nav>
 
 <!-- HERO -->
@@ -258,10 +310,10 @@
   <div class="hero-left">
     <div class="hero-tag fade-up">Handcrafted in Australia</div>
     <h1 class="hero-title fade-up">A stone that holds<br><em>every memory</em><br>of them.</h1>
-    <p class="hero-body fade-up">Memory Stones are hand-poured memorial keepsakes bearing the fingerprint or paw print of those you've loved — a permanent, tangible connection to the ones no longer beside you.</p>
+    <p class="hero-body fade-up">Memory Stones are hand-poured memorial keepsakes bearing the fingerprint or paw print of those you've loved. Created with care, privacy, and a calm hand, each piece offers something tangible to hold onto when words are no longer enough.</p>
     <div class="hero-actions fade-up">
-      <a href="#shop" class="btn-primary">Shop Now</a>
-      <a href="#how-it-works" class="btn-outline">How It Works</a>
+      <a href="products.html" class="btn-primary">View Products</a>
+      <a href="about.html" class="btn-outline">About Memory Stones</a>
     </div>
     <div class="hero-scroll">
       <div class="hero-scroll-line"></div>
@@ -270,6 +322,32 @@
   </div>
   <div class="hero-right">
     <img src="lady_holding_stone_.jpeg" alt="Hands holding a Memory Stone">
+  </div>
+</section>
+
+<!-- TRUST -->
+<section id="reassurance">
+  <div class="trust-grid">
+    <div class="trust-item fade-up">
+      <div class="trust-kicker">Craft</div>
+      <div class="trust-title">Handcrafted in Australia</div>
+      <p class="trust-body">Each Memory Stone is individually poured, finished, and prepared with the care a memorial piece deserves.</p>
+    </div>
+    <div class="trust-item fade-up">
+      <div class="trust-kicker">Care</div>
+      <div class="trust-title">Guided personally</div>
+      <p class="trust-body">We respond to families and partners directly, helping you choose the right option without pressure or hurried sales language.</p>
+    </div>
+    <div class="trust-item fade-up">
+      <div class="trust-kicker">Timing</div>
+      <div class="trust-title">Suitable at different stages</div>
+      <p class="trust-body">Impressions may be taken before or after passing, or created from an existing print already held by your vet or funeral home.</p>
+    </div>
+    <div class="trust-item fade-up">
+      <div class="trust-kicker">Respect</div>
+      <div class="trust-title">Private and carefully handled</div>
+      <p class="trust-body">Every print, enquiry, and memorial detail is handled discreetly and respectfully from first contact through delivery.</p>
+    </div>
   </div>
 </section>
 
@@ -320,7 +398,7 @@
         <p class="product-desc">Everything you need to capture your pet's paw print impression — from the comfort of home or with your vet. Includes mould materials, step-by-step instructions, and a keepsake wooden box.</p>
         <div class="product-footer">
           <div class="product-price">A$40 <span>AUD</span></div>
-          <button class="btn-buy" onclick="openEnquiry('Pet Impression Kit')">Order Now</button>
+          <a id="home-buy-pet-impression-kit" href="pet-impression-kit.html" class="btn-buy" style="text-decoration:none;display:inline-block;">Secure Checkout</a>
         </div>
       </div>
     </div>
@@ -332,7 +410,7 @@
         <p class="product-desc">A hand-poured, weighted stone bearing your pet's paw print — their name and dates engraved beneath. A permanent tribute to hold, display, or place at their resting place.</p>
         <div class="product-footer">
           <div class="product-price">A$550 <span>AUD</span></div>
-          <button class="btn-buy" onclick="openEnquiry('Pet Memory Stone')">Order Now</button>
+          <a id="home-buy-pet-memory-stone" href="pet-memory-stone.html" class="btn-buy" style="text-decoration:none;display:inline-block;">Secure Checkout</a>
         </div>
       </div>
     </div>
@@ -344,11 +422,26 @@
         <p class="product-desc">A profound keepsake bearing a loved one's handprint or fingerprint, cast into a smooth, enduring stone. Crafted with your funeral home or independently from a print on file.</p>
         <div class="product-footer">
           <div class="product-price">A$750 <span>AUD</span></div>
-          <button class="btn-buy" onclick="openEnquiry('Human Memory Stone')">Order Now</button>
+          <a id="home-buy-human-memory-stone" href="human-memory-stone.html" class="btn-buy" style="text-decoration:none;display:inline-block;">Secure Checkout</a>
         </div>
       </div>
     </div>
   </div>
+  <div class="product-guidance">
+    <div class="guidance-card fade-up">
+      <div class="guidance-title">Pet Impression Kit</div>
+      <p class="guidance-body"><strong>Best for:</strong> families who want to capture a paw print now and decide on a final memorial later. A gentle first step when time feels uncertain.<br><br><strong>Includes:</strong> impression materials, instructions, and a presentation box suitable for home or clinic use.</p>
+    </div>
+    <div class="guidance-card fade-up">
+      <div class="guidance-title">Pet Memory Stone</div>
+      <p class="guidance-body"><strong>Best for:</strong> those ready for a finished memorial made from a beloved pet's paw impression. Designed to sit beautifully in the home or beside a resting place.<br><br><strong>Includes:</strong> handcrafted stone creation, engraving details, finishing, and keepsake presentation.</p>
+    </div>
+    <div class="guidance-card fade-up">
+      <div class="guidance-title">Human Memory Stone</div>
+      <p class="guidance-body"><strong>Best for:</strong> families honouring a parent, partner, child, or close friend through a fingerprint or handprint memorial of lasting weight and presence.<br><br><strong>Process:</strong> created with direct family support or in coordination with a funeral home using prints already taken with care.</p>
+    </div>
+  </div>
+  <p class="guidance-note fade-up">If you are unsure which option is most appropriate, contact us. We can help you understand what is possible, what timing matters, and whether a kit, a finished stone, or partner support will best suit your situation.</p>
 </section>
 
 <!-- 51% IMPACT -->
@@ -388,6 +481,98 @@
           <div class="stat-num">0</div>
           <div class="stat-label">Greenwashing — every dollar verified and reported</div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-copy">
+      <div class="section-tag fade-up">About Memory Stones</div>
+      <h2 class="section-title fade-up">Created for remembrance<br><em>that feels lasting.</em></h2>
+      <p class="fade-up">Memory Stones began from a simple belief: when someone has been deeply loved, remembrance should not feel generic. In the midst of loss, many people are looking not for more things, but for one meaningful object that still carries a sense of closeness.</p>
+      <p class="fade-up">That is why each piece is shaped around touch: a paw print, a fingerprint, a handprint. We work quietly, in small numbers, so the memorial can feel considered from first enquiry through to the moment it arrives.</p>
+      <p class="fade-up">Our role is not only to make a beautiful object, but to make the process feel steadier. Families, funeral homes, and veterinary teams trust us with details that are deeply personal. We try to honour that trust in the way we communicate, craft, package, and deliver every stone.</p>
+    </div>
+    <aside class="about-aside fade-up">
+      <div class="about-aside-title">What guides the work</div>
+      <p class="about-aside-copy">Premium memorial pieces should feel grounded, not ornamental. Every part of the experience is designed to feel calm, private, and worthy of the life being remembered.</p>
+      <div class="about-points">
+        <div class="about-point">Stone was chosen for its weight, permanence, and quiet presence in the home.</div>
+        <div class="about-point">Each memorial is individually handcrafted rather than batch produced.</div>
+        <div class="about-point">We support both direct family orders and professional partner referrals.</div>
+        <div class="about-point">Our 51% Impact pledge reflects a long-term commitment to doing good beyond the product itself.</div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- STORIES -->
+<section id="stories">
+  <div class="stories-header">
+    <div>
+      <div class="section-tag fade-up">Stories & Reflections</div>
+      <h2 class="section-title fade-up">Shared with permission,<br><em>and with care.</em></h2>
+    </div>
+    <p class="stories-note fade-up">The stories behind these memorials are personal. We share them sparingly, always with respect, so families can understand how a Memory Stone may come to live in everyday remembrance.</p>
+  </div>
+  <div class="stories-grid">
+    <article class="story-card fade-up">
+      <div class="story-type">Pet Memorial</div>
+      <p class="story-quote">"It felt like the first thing we had held onto that did not feel fragile."</p>
+      <p class="story-body">After losing their older Labrador, one family chose a Memory Stone to keep beside his collar and lead. They told us the weight of it made the remembrance feel more real, and more peaceful.</p>
+      <p class="story-credit">Shared by a Melbourne family</p>
+    </article>
+    <article class="story-card fade-up">
+      <div class="story-type">Human Memorial</div>
+      <p class="story-quote">"We wanted something quieter than an urn, but more tangible than a photograph."</p>
+      <p class="story-body">Created from an existing fingerprint provided through a funeral home, this piece was made for siblings looking for a memorial that could sit naturally in the home without feeling ceremonial every day.</p>
+      <p class="story-credit">Shared by a family in regional Victoria</p>
+    </article>
+    <article class="story-card fade-up">
+      <div class="story-type">Partner Reflection</div>
+      <p class="story-quote">"Families appreciate being offered something personal without feeling pressured."</p>
+      <p class="story-body">A veterinary partner described Memory Stones as a gentle extension of aftercare: simple to explain, dignified to provide, and meaningful long after the appointment itself has passed.</p>
+      <p class="story-credit">Shared by a veterinary clinic partner</p>
+    </article>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="faq-wrap">
+    <div>
+      <div class="section-tag fade-up">Questions, Gently Answered</div>
+      <h2 class="section-title fade-up">A few things families<br><em>often need to know.</em></h2>
+      <p class="section-sub fade-up">Memorial decisions are rarely made in ordinary circumstances. These answers are here to make the process clearer, calmer, and easier to trust.</p>
+      <p class="faq-note fade-up">If your question is personal to your situation, or you are unsure what may still be possible, please contact us directly. We are always happy to guide you quietly and clearly.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item fade-up">
+        <div class="faq-question">When should I order?</div>
+        <p class="faq-answer">If you would like to capture a print yourself, it is best to order the impression kit as soon as possible. If your vet or funeral home has already taken a print, we may be able to work from that instead.</p>
+      </div>
+      <div class="faq-item fade-up">
+        <div class="faq-question">Can a print be taken after passing?</div>
+        <p class="faq-answer">In many cases, yes. The exact timing depends on the circumstances, so we encourage you to reach out or speak with your veterinary or funeral care team if you are unsure.</p>
+      </div>
+      <div class="faq-item fade-up">
+        <div class="faq-question">Do you work with funeral homes and veterinary clinics?</div>
+        <p class="faq-answer">Yes. We regularly support partners who help families collect impressions with dignity and care, or who provide an existing print for us to work from.</p>
+      </div>
+      <div class="faq-item fade-up">
+        <div class="faq-question">How long does the process take?</div>
+        <p class="faq-answer">Timeframes vary depending on the product and whether we are waiting on a returned kit or supplied print. We aim to communicate clearly at each step so you know what to expect.</p>
+      </div>
+      <div class="faq-item fade-up">
+        <div class="faq-question">Will the finished stone look exactly like the original print?</div>
+        <p class="faq-answer">Each stone is handmade, so slight variation is part of the piece's character. Our goal is not to make something generic, but to preserve the distinct impression that made them recognisably theirs.</p>
+      </div>
+      <div class="faq-item fade-up">
+        <div class="faq-question">What if something is wrong with my order?</div>
+        <p class="faq-answer">If a product arrives damaged or there has been an issue in workmanship, please contact us promptly. We will review the situation with care and discuss repair, remake, or another appropriate resolution.</p>
       </div>
     </div>
   </div>
@@ -445,7 +630,7 @@
       <div class="partners-cta-inner">
         <h3 class="partners-cta-title">Become a Memory Stones Partner</h3>
         <p class="partners-cta-body">Join a growing network of funeral homes and veterinary practices offering families a meaningful, lasting memorial — backed by our 51% impact commitment.</p>
-        <a href="#contact" class="btn-primary" onclick="setContactType('Funeral Home / Veterinary Clinic Partnership')">Enquire About Partnering</a>
+        <a href="partners.html" class="btn-primary">View Partner Program</a>
       </div>
     </div>
   </div>
@@ -457,7 +642,7 @@
     <div>
       <div class="section-tag fade-up">Get in Touch</div>
       <h2 class="section-title fade-up">We're here<br>to <em>help.</em></h2>
-      <p class="section-sub fade-up">Whether you're ordering for yourself, enquiring about a partnership, or need guidance on the process — we respond to every message personally.</p>
+      <p class="section-sub fade-up">Whether you are ordering for yourself, enquiring about a partnership, or trying to understand what is possible in a tender moment, every message is read and answered personally.</p>
       <div class="contact-details">
         <div class="contact-item fade-up">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -529,10 +714,16 @@
   </a>
   <p class="footer-copy">© 2026 Memory Stones Australia. All rights reserved.</p>
   <ul class="footer-links">
-    <li><a href="#shop">Shop</a></li>
-    <li><a href="#impact">Impact</a></li>
-    <li><a href="#partners">Partners</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="stories.html">Stories</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="partners.html">Partners</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="shipping-policy.html">Shipping</a></li>
+    <li><a href="returns-remake-policy.html">Returns</a></li>
+    <li><a href="privacy-policy.html">Privacy</a></li>
+    <li><a href="terms-of-service.html">Terms</a></li>
   </ul>
 </footer>
 
@@ -576,5 +767,6 @@
     setTimeout(() => { btn.textContent = 'Send Message'; btn.style.background = ''; btn.disabled = false; }, 4000);
   }
 </script>
+<script src="stripe-links.js"></script>
 </body>
 </html>

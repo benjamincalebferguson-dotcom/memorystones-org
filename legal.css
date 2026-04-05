@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: 'Jost', sans-serif;
+  background: #faf7f3;
+  color: #1a1410;
+}
+
+a {
+  color: #7a5230;
+}
+
+.page-header {
+  position: sticky;
+  top: 0;
+  background: rgba(250, 247, 243, 0.96);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(176, 125, 78, 0.14);
+}
+
+.page-header-inner,
+.page-footer-inner,
+.policy-page {
+  width: min(920px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.page-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  gap: 18px;
+}
+
+.brand {
+  text-decoration: none;
+  color: #1a1410;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.page-nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.page-nav a {
+  text-decoration: none;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #5a4a3a;
+}
+
+.policy-page {
+  padding: 72px 0 96px;
+}
+
+.eyebrow {
+  margin: 0 0 16px;
+  font-size: 0.74rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #b07d4e;
+}
+
+h1 {
+  margin: 0 0 18px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  font-weight: 300;
+  line-height: 1.08;
+}
+
+.lead {
+  max-width: 700px;
+  font-size: 1rem;
+  line-height: 1.9;
+  color: #5a4a3a;
+  font-weight: 300;
+}
+
+.meta {
+  margin-top: 16px;
+  font-size: 0.82rem;
+  color: #9a8878;
+}
+
+section {
+  margin-top: 42px;
+  background: white;
+  border: 1px solid rgba(176, 125, 78, 0.14);
+  padding: 28px;
+}
+
+h2 {
+  margin: 0 0 12px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+p,
+li {
+  font-size: 0.94rem;
+  line-height: 1.9;
+  color: #5a4a3a;
+  font-weight: 300;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.page-footer {
+  border-top: 1px solid rgba(176, 125, 78, 0.14);
+  padding: 24px 0 40px;
+}
+
+.page-footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.page-footer p {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #9a8878;
+}
+
+@media (max-width: 720px) {
+  .page-header-inner,
+  .page-footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .policy-page {
+    padding: 48px 0 72px;
+  }
+}
